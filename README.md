@@ -14,4 +14,4 @@ Now there are:
 
 You can click "Сгенерировать" to regenerate timetable with new weight coefficients.
 
-Any commentaries and forks are welcome!
+Any <a href = "https://github.com/Altav1sta/TimetableGenerator/issues/1">commentaries</a> and forks are welcome!
