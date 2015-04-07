@@ -1,0 +1,9 @@
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\bin\Debug\TimeTableGenerating.exe.config
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\bin\Debug\TimeTableGenerating.exe
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\bin\Debug\TimeTableGenerating.pdb
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.csprojResolveAssemblyReference.cache
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.MainForm.resources
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.Properties.Resources.resources
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.csproj.GenerateResource.Cache
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.exe
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.pdb
