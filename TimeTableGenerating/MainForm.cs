@@ -15,7 +15,7 @@ namespace TimeTableGenerating
     {
         private TableLayoutPanel[,] tlp;
         private int count;
-        private string connectionStr = string.Format(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0}\..\..\sources\TimeTableDB.mdb", Environment.CurrentDirectory);
+        private string connectionStr; 
 
         public MainForm()
         {
@@ -28,9 +28,21 @@ namespace TimeTableGenerating
         private void InitializeTableByGroups()
         {
             // Вычисляем, сколько существует групп
-            OleDbConnection con = new OleDbConnection(connectionStr);
+            OleDbConnection con;
+            try 
+            {
+                string tmpStr = string.Format(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0}\..\..\sources\TimeTableDB.mdb", Environment.CurrentDirectory);
+                con = new OleDbConnection(tmpStr);
+                con.Open();
+                connectionStr = tmpStr;
+            }
+            catch (Exception e)
+            {
+                connectionStr = string.Format(@"Provider=Microsoft.Ace.OLEDB.12.0;Data Source={0}\..\..\sources\TimeTableDB.mdb", Environment.CurrentDirectory);
+                con = new OleDbConnection(connectionStr);
+                con.Open();
+            }
             OleDbCommand oc = new OleDbCommand("SELECT count(*) FROM Groups", con);
-            con.Open();
             count = Convert.ToInt32(oc.ExecuteScalar());
 
             // Добавляем столько столбцов, сколько существует групп в базе данных
@@ -101,6 +113,7 @@ namespace TimeTableGenerating
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
             double[] w = new double[6];
 
             if (!Double.TryParse(textBox1.Text, out w[0]) || !Double.TryParse(textBox2.Text, out w[1]) || !Double.TryParse(textBox3.Text, out w[2]) || !Double.TryParse(textBox4.Text, out w[3])
@@ -132,6 +145,7 @@ namespace TimeTableGenerating
                     }
                 }
             }
+            button1.Enabled = true;
         }
     }
 }
