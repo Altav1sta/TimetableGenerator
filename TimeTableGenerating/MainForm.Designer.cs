@@ -196,7 +196,7 @@
             this.tlpTable.Controls.Add(this.tlpThursday, 1, 4);
             this.tlpTable.Controls.Add(this.tlpFriday, 1, 5);
             this.tlpTable.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tlpTable.Location = new System.Drawing.Point(487, 0);
+            this.tlpTable.Location = new System.Drawing.Point(512, 0);
             this.tlpTable.Margin = new System.Windows.Forms.Padding(400, 3, 3, 3);
             this.tlpTable.Name = "tlpTable";
             this.tlpTable.RowCount = 6;
@@ -206,14 +206,14 @@
             this.tlpTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpTable.Size = new System.Drawing.Size(81, 459);
+            this.tlpTable.Size = new System.Drawing.Size(81, 463);
             this.tlpTable.TabIndex = 11;
             // 
             // lblMonday
             // 
             this.lblMonday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMonday.AutoSize = true;
-            this.lblMonday.Location = new System.Drawing.Point(5, 40);
+            this.lblMonday.Location = new System.Drawing.Point(5, 41);
             this.lblMonday.Name = "lblMonday";
             this.lblMonday.Size = new System.Drawing.Size(21, 13);
             this.lblMonday.TabIndex = 12;
@@ -224,7 +224,7 @@
             // 
             this.lblTuesday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTuesday.AutoSize = true;
-            this.lblTuesday.Location = new System.Drawing.Point(6, 131);
+            this.lblTuesday.Location = new System.Drawing.Point(6, 133);
             this.lblTuesday.Name = "lblTuesday";
             this.lblTuesday.Size = new System.Drawing.Size(19, 13);
             this.lblTuesday.TabIndex = 13;
@@ -235,7 +235,7 @@
             // 
             this.lblWednesday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblWednesday.AutoSize = true;
-            this.lblWednesday.Location = new System.Drawing.Point(6, 222);
+            this.lblWednesday.Location = new System.Drawing.Point(6, 225);
             this.lblWednesday.Name = "lblWednesday";
             this.lblWednesday.Size = new System.Drawing.Size(20, 13);
             this.lblWednesday.TabIndex = 13;
@@ -246,7 +246,7 @@
             // 
             this.lblThursday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblThursday.AutoSize = true;
-            this.lblThursday.Location = new System.Drawing.Point(6, 313);
+            this.lblThursday.Location = new System.Drawing.Point(6, 317);
             this.lblThursday.Name = "lblThursday";
             this.lblThursday.Size = new System.Drawing.Size(20, 13);
             this.lblThursday.TabIndex = 14;
@@ -257,7 +257,7 @@
             // 
             this.lblFriday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFriday.AutoSize = true;
-            this.lblFriday.Location = new System.Drawing.Point(6, 405);
+            this.lblFriday.Location = new System.Drawing.Point(6, 409);
             this.lblFriday.Name = "lblFriday";
             this.lblFriday.Size = new System.Drawing.Size(20, 13);
             this.lblFriday.TabIndex = 15;
@@ -286,14 +286,14 @@
             this.tlpMonday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpMonday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpMonday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpMonday.Size = new System.Drawing.Size(48, 90);
+            this.tlpMonday.Size = new System.Drawing.Size(48, 91);
             this.tlpMonday.TabIndex = 16;
             // 
             // label18
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(4, 72);
+            this.label18.Location = new System.Drawing.Point(4, 75);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(40, 13);
             this.label18.TabIndex = 17;
@@ -303,7 +303,7 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 2);
+            this.label6.Location = new System.Drawing.Point(4, 3);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 13;
@@ -313,7 +313,7 @@
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(4, 19);
+            this.label11.Location = new System.Drawing.Point(4, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 13);
             this.label11.TabIndex = 14;
@@ -323,7 +323,7 @@
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(4, 36);
+            this.label16.Location = new System.Drawing.Point(4, 39);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(40, 13);
             this.label16.TabIndex = 15;
@@ -333,7 +333,7 @@
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(4, 53);
+            this.label17.Location = new System.Drawing.Point(4, 57);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(40, 13);
             this.label17.TabIndex = 16;
@@ -352,7 +352,7 @@
             this.tlpTuesday.Controls.Add(this.label12, 0, 1);
             this.tlpTuesday.Controls.Add(this.label19, 0, 2);
             this.tlpTuesday.Controls.Add(this.label20, 0, 3);
-            this.tlpTuesday.Location = new System.Drawing.Point(32, 93);
+            this.tlpTuesday.Location = new System.Drawing.Point(32, 94);
             this.tlpTuesday.Margin = new System.Windows.Forms.Padding(0);
             this.tlpTuesday.Name = "tlpTuesday";
             this.tlpTuesday.RowCount = 5;
@@ -361,14 +361,14 @@
             this.tlpTuesday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpTuesday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpTuesday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpTuesday.Size = new System.Drawing.Size(48, 90);
+            this.tlpTuesday.Size = new System.Drawing.Size(48, 91);
             this.tlpTuesday.TabIndex = 17;
             // 
             // label21
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(4, 72);
+            this.label21.Location = new System.Drawing.Point(4, 75);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(40, 13);
             this.label21.TabIndex = 18;
@@ -378,7 +378,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 2);
+            this.label7.Location = new System.Drawing.Point(4, 3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 14;
@@ -388,7 +388,7 @@
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(4, 19);
+            this.label12.Location = new System.Drawing.Point(4, 21);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 15;
@@ -398,7 +398,7 @@
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(4, 36);
+            this.label19.Location = new System.Drawing.Point(4, 39);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(40, 13);
             this.label19.TabIndex = 16;
@@ -408,7 +408,7 @@
             // 
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(4, 53);
+            this.label20.Location = new System.Drawing.Point(4, 57);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(40, 13);
             this.label20.TabIndex = 17;
@@ -427,7 +427,7 @@
             this.tlpWednesday.Controls.Add(this.label13, 0, 1);
             this.tlpWednesday.Controls.Add(this.label22, 0, 2);
             this.tlpWednesday.Controls.Add(this.label23, 0, 3);
-            this.tlpWednesday.Location = new System.Drawing.Point(32, 184);
+            this.tlpWednesday.Location = new System.Drawing.Point(32, 186);
             this.tlpWednesday.Margin = new System.Windows.Forms.Padding(0);
             this.tlpWednesday.Name = "tlpWednesday";
             this.tlpWednesday.RowCount = 5;
@@ -436,14 +436,14 @@
             this.tlpWednesday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpWednesday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpWednesday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpWednesday.Size = new System.Drawing.Size(48, 90);
+            this.tlpWednesday.Size = new System.Drawing.Size(48, 91);
             this.tlpWednesday.TabIndex = 18;
             // 
             // label24
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(4, 72);
+            this.label24.Location = new System.Drawing.Point(4, 75);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(40, 13);
             this.label24.TabIndex = 19;
@@ -453,7 +453,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 2);
+            this.label8.Location = new System.Drawing.Point(4, 3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 15;
@@ -463,7 +463,7 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(4, 19);
+            this.label13.Location = new System.Drawing.Point(4, 21);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(40, 13);
             this.label13.TabIndex = 16;
@@ -473,7 +473,7 @@
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(4, 36);
+            this.label22.Location = new System.Drawing.Point(4, 39);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(40, 13);
             this.label22.TabIndex = 17;
@@ -483,7 +483,7 @@
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(4, 53);
+            this.label23.Location = new System.Drawing.Point(4, 57);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(40, 13);
             this.label23.TabIndex = 18;
@@ -502,7 +502,7 @@
             this.tlpThursday.Controls.Add(this.label14, 0, 1);
             this.tlpThursday.Controls.Add(this.label25, 0, 2);
             this.tlpThursday.Controls.Add(this.label26, 0, 3);
-            this.tlpThursday.Location = new System.Drawing.Point(32, 275);
+            this.tlpThursday.Location = new System.Drawing.Point(32, 278);
             this.tlpThursday.Margin = new System.Windows.Forms.Padding(0);
             this.tlpThursday.Name = "tlpThursday";
             this.tlpThursday.RowCount = 5;
@@ -511,14 +511,14 @@
             this.tlpThursday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpThursday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpThursday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpThursday.Size = new System.Drawing.Size(48, 90);
+            this.tlpThursday.Size = new System.Drawing.Size(48, 91);
             this.tlpThursday.TabIndex = 19;
             // 
             // label27
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(4, 72);
+            this.label27.Location = new System.Drawing.Point(4, 75);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(40, 13);
             this.label27.TabIndex = 20;
@@ -528,7 +528,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 2);
+            this.label9.Location = new System.Drawing.Point(4, 3);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 13);
             this.label9.TabIndex = 16;
@@ -538,7 +538,7 @@
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 19);
+            this.label14.Location = new System.Drawing.Point(4, 21);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(40, 13);
             this.label14.TabIndex = 17;
@@ -548,7 +548,7 @@
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(4, 36);
+            this.label25.Location = new System.Drawing.Point(4, 39);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(40, 13);
             this.label25.TabIndex = 18;
@@ -558,7 +558,7 @@
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(4, 53);
+            this.label26.Location = new System.Drawing.Point(4, 57);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(40, 13);
             this.label26.TabIndex = 19;
@@ -577,7 +577,7 @@
             this.tlpFriday.Controls.Add(this.label15, 0, 1);
             this.tlpFriday.Controls.Add(this.label28, 0, 2);
             this.tlpFriday.Controls.Add(this.label29, 0, 3);
-            this.tlpFriday.Location = new System.Drawing.Point(32, 366);
+            this.tlpFriday.Location = new System.Drawing.Point(32, 370);
             this.tlpFriday.Margin = new System.Windows.Forms.Padding(0);
             this.tlpFriday.Name = "tlpFriday";
             this.tlpFriday.RowCount = 5;
@@ -655,12 +655,12 @@
             this.tlpBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpBottom.Controls.Add(this.button1, 0, 0);
             this.tlpBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tlpBottom.Location = new System.Drawing.Point(0, 429);
+            this.tlpBottom.Location = new System.Drawing.Point(0, 433);
             this.tlpBottom.Name = "tlpBottom";
             this.tlpBottom.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tlpBottom.RowCount = 1;
             this.tlpBottom.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpBottom.Size = new System.Drawing.Size(487, 30);
+            this.tlpBottom.Size = new System.Drawing.Size(512, 30);
             this.tlpBottom.TabIndex = 12;
             // 
             // label31
@@ -697,7 +697,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(568, 459);
+            this.ClientSize = new System.Drawing.Size(593, 463);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);

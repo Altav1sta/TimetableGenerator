@@ -55,7 +55,7 @@ namespace TimeTableGenerating
                 this.w[i] = w[i];
             connectionString = conStr;
         }
-
+        
 
         public void generateTimeTable()
         {
@@ -184,6 +184,48 @@ namespace TimeTableGenerating
                 timetable[groupIndex, day_max, pos_max] = new Lesson(lessonsID[i], isLect, tID, r_max);
                 
             }
+
+        }
+        
+        public double getMeasureOfQuality()
+        {
+            // Getting indexes of groups
+            int[] groups = new int[count];
+            OleDbConnection con = new OleDbConnection(connectionString);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT Number FROM Groups", con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            int counter = 0;
+            while (reader.Read())
+            {
+                groups[counter] = reader.GetInt32(0);
+                counter++;
+            }
+
+            // Пересчитываем качество расписания
+            double R_total = 0;
+            for (int i = 0; i < count; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    for (int k = 0; k < 5; k++)
+                    {
+                        if (timetable[i, j, k].id == 0) continue;
+
+                        Lesson tmp = timetable[i, j, k];
+                        timetable[i, j, k] = new Lesson();
+                        R_total += w[0] * measureOfQualityInTimeSpace(i, tmp.tId, 0, j, k);
+                        R_total += w[1] * measureOfQualityInTimeSpace(i, tmp.tId, 1, j, k);
+                        R_total += w[2] * measureOfQualityInTimeSpace(i, tmp.tId, 2, j, k);
+                        R_total += w[3] * measureOfQualityInTimeSpace(i, tmp.tId, 3, j, k);
+                        R_total += w[4] * measureOfQualityInTimeSpace(i, tmp.tId, 4, j, k);
+                        R_total += w[5] * measureOfQualityInRoomSpace(groups[i], tmp.room);
+                        timetable[i, j, k] = tmp;
+                    }
+                }
+            }
+
+            return R_total;
         }
 
         private double measureOfQualityInRoomSpace(int group, int room)

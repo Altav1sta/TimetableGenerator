@@ -113,18 +113,123 @@ namespace TimeTableGenerating
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DateTime startTime = DateTime.Now;
             button1.Enabled = false;
-            double[] w = new double[6];
+            /*double[] w = new double[6];
 
             if (!Double.TryParse(textBox1.Text, out w[0]) || !Double.TryParse(textBox2.Text, out w[1]) || !Double.TryParse(textBox3.Text, out w[2]) || !Double.TryParse(textBox4.Text, out w[3])
                 || !Double.TryParse(textBox5.Text, out w[4]) || !Double.TryParse(textBox6.Text, out w[5]))
             {
                 MessageBox.Show("Значение должно быть десятичным числом!");
                 return;
+            }*/
+
+
+            int magnitudeOfPopulation = 10;
+            double mutationProbability = 0.05;
+            // Создадим популяцию
+            double[][] w = new double[magnitudeOfPopulation][];
+            for (int i = 0; i < magnitudeOfPopulation; i++)
+                w[i] = new double[6];
+            Random r = new Random();
+            for (int i = 0; i < magnitudeOfPopulation; i++)
+            {
+                double sum = 0;
+                double excess = 1;
+                for (int j = 0; j < 5; j++)
+                {
+                    w[i][j] = r.NextDouble() * excess;
+                    sum += w[i][j] * w[i][j];
+                    excess = 1 - sum;
+                }
+                w[i][5] = excess;
+            }
+            // Создадим массив фалгов того, что особь жива.
+            bool[] isUnitAlive = new bool[magnitudeOfPopulation];
+            for (int i = 0; i < magnitudeOfPopulation; i++) isUnitAlive[i] = true;
+
+            // Запускаем процесс эволюции
+            Generator g;
+            int indexOfAliveUnit = -1;
+            while (true)
+            {                
+                // Мутация
+                int amountOfMutants = 0;
+                bool[] didUnitMutate = new bool[magnitudeOfPopulation];
+                while (true)
+                {
+                    if (mutationProbability == 0) break;
+
+                    int mutantIndex = r.Next(magnitudeOfPopulation);
+                    
+                    // Если особь мертва или уже мутировала - она нам не подходит
+                    if (!isUnitAlive[mutantIndex] || didUnitMutate[mutantIndex]) continue;
+
+                    int first = r.Next(6);
+                    int last;
+                    while (true)
+                    {
+                        last = r.Next(6);
+                        if (first != last) break;
+                    }
+                    double tmp = w[mutantIndex][first];
+                    w[mutantIndex][first] = w[mutantIndex][last];
+                    w[mutantIndex][last] = tmp;
+
+                    didUnitMutate[mutantIndex] = true;
+                    amountOfMutants++;
+                    if (amountOfMutants >= Math.Ceiling(magnitudeOfPopulation * mutationProbability)) break;
+                }
+
+
+                // Селекция
+                int amountOfAliveUnits = 0;
+                // Считаем живых
+                for (int i = 0; i < magnitudeOfPopulation; i++)
+                {
+                    if (isUnitAlive[i]) amountOfAliveUnits++;
+                }
+                // Убиваем слабых
+                for (int i = 0; i < amountOfAliveUnits / 2; i++)
+                {
+                    double minQuality = 1000.0;
+                    int indexMin = -1;
+                    for (int j = 0; j < magnitudeOfPopulation; j++)
+                    {
+                        if (isUnitAlive[j])
+                        {
+                            g = new Generator(count, w[j], connectionStr);
+                            g.generateTimeTable();
+                            double curQuality = g.getMeasureOfQuality();
+                            if (curQuality <= minQuality)
+                            {
+                                minQuality = curQuality;
+                                indexMin = j;
+                            }
+                        }
+                    }
+                    isUnitAlive[indexMin] = false;
+                }
+
+                // Если осталась одна особь, заканчиваем цикл
+                amountOfAliveUnits = 0;
+                for (int i = 0; i < magnitudeOfPopulation; i++)
+                {
+                    if (isUnitAlive[i])
+                    {
+                        amountOfAliveUnits++;
+                        indexOfAliveUnit = i;
+                    }
+                }
+                if (amountOfAliveUnits == 1) break;
             }
 
-            Generator g = new Generator(count, w, connectionStr);
+            g = new Generator(count, w[indexOfAliveUnit], connectionStr);
             g.generateTimeTable();
+
+
+            //Generator g = new Generator(count, w, connectionStr);
+            //g.generateTimeTable();
             
 
             for (int day = 0; day < 5; day++)
@@ -146,6 +251,8 @@ namespace TimeTableGenerating
                 }
             }
             button1.Enabled = true;
+            DateTime endTime = DateTime.Now;
+            MessageBox.Show("Время работы: " + (endTime - startTime).ToString());
         }
     }
 }
