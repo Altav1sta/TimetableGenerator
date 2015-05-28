@@ -36,7 +36,7 @@ namespace TimeTableGenerating
                 con.Open();
                 OleDbCommand cmd = new OleDbCommand("SELECT Lesson FROM Lessons WHERE Lessons.ID = " + id, con);
                 string title = Convert.ToString(cmd.ExecuteScalar());
-                cmd = new OleDbCommand("SELECT TName FROM Teachers WHERE Teachers.ID = " + tId, con);
+                cmd = new OleDbCommand("SELECT TName FROM Teachers WHERE Teachers.tID = " + tId, con);
                 string teacher = Convert.ToString(cmd.ExecuteScalar());
                 string lection;
                 if (isLect) lection = ", лекция, ";
@@ -187,7 +187,7 @@ namespace TimeTableGenerating
 
         }
         
-        public double getMeasureOfQuality()
+        public double getMeasureOfQuality(double[] W)
         {
             // Getting indexes of groups
             int[] groups = new int[count];
@@ -214,12 +214,12 @@ namespace TimeTableGenerating
 
                         Lesson tmp = timetable[i, j, k];
                         timetable[i, j, k] = new Lesson();
-                        R_total += w[0] * measureOfQualityInTimeSpace(i, tmp.tId, 0, j, k);
-                        R_total += w[1] * measureOfQualityInTimeSpace(i, tmp.tId, 1, j, k);
-                        R_total += w[2] * measureOfQualityInTimeSpace(i, tmp.tId, 2, j, k);
-                        R_total += w[3] * measureOfQualityInTimeSpace(i, tmp.tId, 3, j, k);
-                        R_total += w[4] * measureOfQualityInTimeSpace(i, tmp.tId, 4, j, k);
-                        R_total += w[5] * measureOfQualityInRoomSpace(groups[i], tmp.room);
+                        R_total += W[0] * measureOfQualityInTimeSpace(i, tmp.tId, 0, j, k);
+                        R_total += W[1] * measureOfQualityInTimeSpace(i, tmp.tId, 1, j, k);
+                        R_total += W[2] * measureOfQualityInTimeSpace(i, tmp.tId, 2, j, k);
+                        R_total += W[3] * measureOfQualityInTimeSpace(i, tmp.tId, 3, j, k);
+                        R_total += W[4] * measureOfQualityInTimeSpace(i, tmp.tId, 4, j, k);
+                        R_total += W[5] * measureOfQualityInRoomSpace(groups[i], tmp.room);
                         timetable[i, j, k] = tmp;
                     }
                 }

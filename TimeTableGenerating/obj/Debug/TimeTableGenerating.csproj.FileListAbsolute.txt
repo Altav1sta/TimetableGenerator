@@ -7,3 +7,8 @@ C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\o
 C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.csproj.GenerateResource.Cache
 C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.exe
 C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.pdb
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.AddLesson.resources
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.AddGroup.resources
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.AddRoom.resources
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.AddTeacher.resources
+C:\Users\Altav1sta\Dropbox\Anya diplom\TimeTableGenerating\TimeTableGenerating\obj\Debug\TimeTableGenerating.csproj.ResolveComReference.cache
