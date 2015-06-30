@@ -1,6 +1,6 @@
 # TimetableGenerator
 
-Program for creating university timetables. <br/>
+Program for creating university timetables by natural selection principle. <br/>
 It was made in <b>C#</b> using <b>Windows Forms</b>. Temporary in russian.
 
 You can choose weights depending on what you wish to be more significient.<br/>
