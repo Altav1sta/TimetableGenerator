@@ -12,7 +12,7 @@ Now there are:
 - Schedule workload
 - Superfluity of places in auditorium
 
-![Image alt](https://github.com/Altav1sta/TimetableGenerator/raw/master/TimetableGenerating/sources/screenshot.PNG)
+![Image alt](https://github.com/Altav1sta/TimetableGenerator/raw/master/TimeTableGenerating/sources/screenshot.PNG)
 
 Also you are able to:
 - Input other values and click "Сгенерировать" to regenerate timetable with new weight coefficients.
